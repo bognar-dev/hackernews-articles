@@ -7,7 +7,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <Link href="/" className="text-2xl font-bold tracking-tighter">
-            The Compiler
+            >_ The Compiler
           </Link>
           <p className="text-sm text-muted-foreground hidden md:block">Your AI-curated Hacker News digest</p>
         </div>

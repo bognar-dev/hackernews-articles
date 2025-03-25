@@ -109,7 +109,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       </main>
       <footer className="border-t py-6">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} The Compiler. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} >_ The Compiler. All rights reserved.</p>
           <p className="mt-2">Powered by Hacker News, Vercel AI SDK, and Supabase.</p>
         </div>
       </footer>

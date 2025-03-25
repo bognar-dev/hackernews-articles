@@ -11,7 +11,7 @@ interface ArticleCardProps {
   slug: string
 }
 
-export function ArticleCard({ id, title, summary, imageUrl, date, slug }: ArticleCardProps) {
+export function ArticleCard({  title, summary, imageUrl, date, slug }: ArticleCardProps) {
   return (
     <Card className="overflow-hidden transition-all hover:shadow-md">
       <Link href={`/article/${slug}`}>

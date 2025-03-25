@@ -11,7 +11,7 @@ interface PostWithComments {
 // Filter the posts to get the most interesting ones
 export async function filterPosts(
   posts: HNItem[],
-  limit = 10
+  limit = 30  
 ): Promise<HNItem[]> {
   // Prepare the posts data for the prompt
   const postsData = posts.map((post) => ({
@@ -84,9 +84,11 @@ export async function generateSummary(
     COMMENTS:
     ${commentsText}
     
-    Write a concise, informative summary of the discussion (not the original article). 
+    Write a informative summary of the discussion (not the original article). 
     Focus on the key insights, interesting perspectives, and main points of disagreement.
     Create a catchy, newspaper-style headline for your summary.
+    Please avoid using the word "summary" in the headline.
+    And do not say A Hacker News discussion erupted or similar phrases, do not sound like you report about the Hacker News discussion but about the topic itself
     
     Format your response as:
     

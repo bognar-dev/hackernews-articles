@@ -75,7 +75,7 @@ export async function fetchAllComments(storyId: number): Promise<HNItem[]> {
 }
 
 // Fetch top stories from Algolia (alternative API with more metadata)
-export async function fetchTopStoriesFromAlgolia(limit = 50): Promise<any[]> {
+export async function fetchTopStoriesFromAlgolia(limit = 50): Promise<unknown[]> {
   const response = await fetch(`${ALGOLIA_API_BASE}/search?tags=front_page&hitsPerPage=${limit}`)
   if (!response.ok) {
     throw new Error(`Failed to fetch from Algolia: ${response.statusText}`)

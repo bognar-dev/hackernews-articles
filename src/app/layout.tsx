@@ -7,7 +7,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "The Compiler - Your AI-Curated Hacker News",
+  title: ">_ The Compiler - Your AI-Curated Hacker News",
   description: "A personal newspaper with AI-curated summaries of Hacker News discussions",
 }
 

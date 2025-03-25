@@ -29,7 +29,7 @@ export async function runScraper() {
 
     // Step 3: Filter the posts using AI
     console.log("Filtering posts...");
-    const filteredPosts = await filterPosts(topStories, 10);
+    const filteredPosts = await filterPosts(topStories, 30);
 
     // Step 4: Process each filtered post
     console.log("Processing filtered posts...");
