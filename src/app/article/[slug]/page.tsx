@@ -1,8 +1,8 @@
 import { Header } from "@/components/header"
+import { createServerSupabaseClient } from "@/lib/supabase"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { createServerSupabaseClient } from "@/lib/supabase"
 
 interface ArticlePageProps {
   params: {
@@ -109,7 +109,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       </main>
       <footer className="border-t py-6">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} The Daily Bin. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} The Compiler. All rights reserved.</p>
           <p className="mt-2">Powered by Hacker News, Vercel AI SDK, and Supabase.</p>
         </div>
       </footer>

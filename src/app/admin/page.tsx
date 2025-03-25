@@ -1,8 +1,8 @@
 import { Header } from "@/components/header"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { OpenExternalDashboard } from "@/components/open-external-dashboard"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import Link from "next/link"
 
 export default function AdminPage() {
   return (
@@ -68,7 +68,7 @@ export default function AdminPage() {
       </main>
       <footer className="border-t py-6">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} The Daily Bin. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} The Compiler. All rights reserved.</p>
         </div>
       </footer>
     </div>

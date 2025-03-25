@@ -109,8 +109,7 @@ export async function saveSummary(
         summary,
         image_prompt: imagePrompt,
         image_url: imageUrl,
-      },
-      { onConflict: "filtered_post_id" },
+      }
     )
     .select()
     .single()

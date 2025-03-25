@@ -1,5 +1,5 @@
-import { Header } from "@/components/header"
 import { ArticleCard } from "@/components/article-card"
+import { Header } from "@/components/header"
 import { getFilteredPostsByDate } from "@/lib/db-service"
 
 export const revalidate = 3600 // Revalidate every hour
@@ -65,7 +65,7 @@ export default async function ArchivePage() {
       </main>
       <footer className="border-t py-6">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} The Daily Bin. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} The Compiler. All rights reserved.</p>
           <p className="mt-2">Powered by Hacker News, Vercel AI SDK, and Supabase.</p>
         </div>
       </footer>

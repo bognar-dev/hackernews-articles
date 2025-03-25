@@ -1,8 +1,8 @@
-import { Header } from "@/components/header"
-import { FeaturedArticle } from "@/components/featured-article"
 import { ArticleCard } from "@/components/article-card"
-import { getLatestFilteredPosts } from "@/lib/db-service"
+import { FeaturedArticle } from "@/components/featured-article"
+import { Header } from "@/components/header"
 import { Button } from "@/components/ui/button"
+import { getLatestFilteredPosts } from "@/lib/db-service"
 import Link from "next/link"
 
 export const revalidate = 3600 // Revalidate every hour
@@ -25,13 +25,13 @@ export default async function Home() {
   // Prepare the posts for display if we have any
   const formattedPosts = hasPosts
     ? posts.map((post) => ({
-        id: post.id,
-        title: post.summaries?.[0]?.title || post.hn_posts.title,
-        summary: post.summaries?.[0]?.summary || "No summary available",
-        imageUrl: post.summaries?.[0]?.image_url || null,
-        date: formattedDate,
-        slug: `${post.id}-${post.hn_posts.hn_id}`,
-      }))
+      id: post.id,
+      title: post.summaries?.[0]?.title || post.hn_posts.title,
+      summary: post.summaries?.[0]?.summary || "No summary available",
+      imageUrl: post.summaries?.[0]?.image_url || null,
+      date: formattedDate,
+      slug: `${post.id}-${post.hn_posts.hn_id}`,
+    }))
     : []
 
   // Split into featured and regular posts if we have any
@@ -79,7 +79,7 @@ export default async function Home() {
       </main>
       <footer className="border-t py-6">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} The Daily Bin. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} The Compiler. All rights reserved.</p>
           <p className="mt-2">Powered by Hacker News, Vercel AI SDK, and Supabase.</p>
         </div>
       </footer>
