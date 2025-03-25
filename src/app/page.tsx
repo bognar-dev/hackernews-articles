@@ -43,7 +43,7 @@ export default async function Home() {
       <Header />
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2">Today's Digest</h1>
+          <h1 className="text-4xl font-bold mb-2">Today&apos;s Digest</h1>
           <p className="text-muted-foreground">{formattedDate}</p>
         </div>
 

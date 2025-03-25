@@ -11,7 +11,7 @@ interface FeaturedArticleProps {
   slug: string
 }
 
-export function FeaturedArticle({ id, title, summary, imageUrl, date, slug }: FeaturedArticleProps) {
+export function FeaturedArticle({ title, summary, imageUrl, date, slug }: FeaturedArticleProps) {
   return (
     <Card className="overflow-hidden transition-all hover:shadow-md">
       <Link href={`/article/${slug}`}>
